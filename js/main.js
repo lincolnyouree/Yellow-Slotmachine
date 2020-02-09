@@ -1,161 +1,62 @@
-var numArray = [];
-var numArray2 = [];
-var numArray3 = [];
-var colorList = ['red', 'orange', 'yellow', 'green', 'blue'];
-var sum = 0;
+/*----- constants -----*/
 
-// to make numbers random 
+const board = [];
+const bet = 10;
 
-function handleClick() {
+/*----- app's state (variables) -----*/
+
+
+/*----- cached element references -----*/
+
+let slot1 = [];
+let slot2 = [];
+let slot3 = [];
+
+/*----- event listeners -----*/
+
+document.getElementById('btn').addEventListener('click', click1);
+document.getElementById('btn').addEventListener('click', click2);
+document.getElementById('btn').addEventListener('click', click3);
+
+/*----- functions -----*/
+
+
+function click1() {
     let randNum = Math.floor((Math.random() * 3)) + 1;
     document.getElementById('slotOne').value = randNum; 
-    numArray.push(randNum);
+    slot1.push(randNum);
     randomNum();
-    sum += randColor;
-    document.getElementById('sum').textContent = sum;
+    checkWinner();
 }
 
-// to make colors random - very similar to numbers
 
-function randomColor() {
-    let randIdx = Math.floor((Math.random() * 5)) + 1;
-    let randColor = colorList[randIdx];
-    document.getElementById('slotOne').style.color = randColor;
-    return randColor;
-}
-
-document.getElementById('btn').addEventListener('click', handleClick);
-
-// challenge: everytime you hit random number add a div to the page 
-
-
-
-///////////////////////////////////////////////////////////////////////////
-
-
-
-function handleClick2() {
+function click2() {
     let randNum = Math.floor((Math.random() * 3)) + 1;
     document.getElementById('slotTwo').value = randNum; 
-    numArray2.push(randNum);
+    slot2.push(randNum);
     randomNum();
-    sum += randColor;
-    document.getElementById('sum').textContent = sum;
+    checkWinner();
 }
 
 
-
-function randomColor() {
-    let randIdx = Math.floor((Math.random() * 5)) + 1;
-    let randColor = colorList[randIdx];
-    document.getElementById('slotTwo').style.color = randColor;
-    return randColor;
-}
-
-document.getElementById('btn').addEventListener('click', handleClick2);
-
-//////////////////////////////////////////////////////////////////////
-
-function handleClick3() {
+function click3() {
     let randNum = Math.floor((Math.random() * 3)) + 1;
     document.getElementById('slotThree').value = randNum; 
-    numArray3.push(randNum);
+    slot3.push(randNum);
     randomNum();
-    sum += randColor;
-    document.getElementById('sum').textContent = sum;
+    checkWinner();
 }
 
-
-
-function randomColor() {
-    let randIdx = Math.floor((Math.random() * 5)) + 1;
-    let randColor = colorList[randIdx];
-    document.getElementById('slotThree').style.color = randColor;
-    return randColor;
-}
-
-document.getElementById('btn').addEventListener('click', handleClick3);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Random Number Generator
-
-// HTML body: <input id="inputBox" type="text" value=""></input>
-    // <br><br>
-    // <button id="btn">Random (1-100)</button>
-    // <br><br>
-    // <div id="sum">0</div>
-
-// CSS:
-
-// #numberBox {
-//     height: 100px;
-//     width: 100px;
-//     font-size: 30px;
-//     text-align: center;
+// function checkWinner() {
+//     if ('slotOne' ==== 'slotTwo' === 'slotThree') {
+//         message.textContent = "Congratulations!";
+//         winner = true;
+//     } else {
+//         message.textContent = "Game Over!";
+//         winner = false;
+//     }
 // }
 
-// div {
-//     height: 100px;
-//     width: 100px;
-//     font-size: 30px;
-//     text-align: center;
-//     border: 1px solid;
-//     line-height: 100px; /* centers the content when the same as your width */
-// }
-
-// JS
-
-// var numArray = [];
-// var colorList = ['red', 'orange', 'yellow', 'green', 'blue'];
-// var sum = 0;
-
-// to make numbers random 
-
-// function handleClick() {
-//     let randNum = Math.floor((Math.random() * 100)) + 1;
-//     document.getElementById('numberBox').value = randNum; 
-//     numArray.push(randNum);
-//     randomColor();
-//     sum += randNum;
-//     document.getElementById('sum').textContent = sum;
-// }
-
-// // to make colors random - very similar to numbers
-
-// function randomColor() {
-//     let randIdx = Math.floor((Math.random() * 5)) + 1;
-//     let randColor = colorList[randIdx];
-//     document.getElementById('numberBox').style.color = randColor;
-//     return randColor;
-// }
-
-// document.getElementById('btn').addEventListener('click', handleClick);
-
-//// challenge: everytime you hit random number add a div to the page 
 
 
 // TIMER
@@ -164,7 +65,7 @@ document.getElementById('btn').addEventListener('click', handleClick3);
 
 // JS:
 
-//var timeLeft = 10;
+// var timeLeft = 10;
 
 // var timer = setInterval(function(){
 // document.getElementById('countdown').innerHTML = timeLeft + ' seconds remaining.'
@@ -174,49 +75,15 @@ document.getElementById('btn').addEventListener('click', handleClick3);
 // }}, 1000); // , 5000 sets 5 second delay - putting nothing implies 0 seconds.
 
 
+
+// OTHER IDEAS
+
+
 /*----- constants -----*/
 
 // const money = 100;
 // const board = [];
 // const bet = 10; 
-
-// /*----- app's state (variables) -----*/
-
-
-// /*----- cached element references -----*/
-
-// const slot1 = document.getElementById('slotOne');
-// const slot2 = document.getElementById('slotTwo');
-// const slot3 = document.getElementById('slotThree');
-// const spin = document.getElementById('btn');
-
-
-// /*----- event listeners -----*/
-
-// document.getElementById('btn').addEventListener('click', spin);
-
-// /*----- functions -----*/
-
-// function spin() {
-//     let randNum = Math.floor((Math.random() * 100)) + 1;
-//     document.getElementById(board).value = randNum; 
-//     randNum.push(slot1);
-//     randomNum();
-//     sum += randColor;
-//     document.getElementById('sum').textContent = sum;
-// }
-
-// function randomColor() {
-//     let randIdx = Math.floor((Math.random() * 5)) + 1;
-//     let randColor = colorList[randIdx];
-//     document.getElementById('slotOne').style.color = randColor;
-//     return randColor;
-// }
-
-// document.getElementById('btn').addEventListener('click', handleClick);
-
-
-
 
 
 // function spin() {

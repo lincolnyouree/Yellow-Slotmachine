@@ -23,6 +23,7 @@
 ## Credits: 
 
 * Custom background: 
+* Jeremy, Blue Meanie, and Submarine Images: https://comicvine.gamespot.com/ || Heinz Edelmann
 
 ## Pseudocode:
 
