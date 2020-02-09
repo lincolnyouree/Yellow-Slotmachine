@@ -13,7 +13,7 @@
 
 ## Wireframe:
 
-! (https://i.imgur.com/wnb6Jkc.jpg)
+! [Wireframe](https://i.imgur.com/wnb6Jkc.jpg)
 * Insert a finished game image here.
 
 ## Technology Implemented:

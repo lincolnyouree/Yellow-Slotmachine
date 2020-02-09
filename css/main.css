@@ -1,18 +1,18 @@
-#numberBox {
+#slotOne {
     height: 100px;
     width: 100px;
     font-size: 30px;
     text-align: center;
 }
 
-#numberBox2 {
+#slotTwo {
     height: 100px;
     width: 100px;
     font-size: 30px;
     text-align: center;
 }
 
-#numberBox3 {
+#slotThree {
     height: 100px;
     width: 100px;
     font-size: 30px;

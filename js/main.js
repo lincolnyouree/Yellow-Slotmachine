@@ -8,7 +8,7 @@ var sum = 0;
 
 function handleClick() {
     let randNum = Math.floor((Math.random() * 3)) + 1;
-    document.getElementById('numberBox').value = randNum; 
+    document.getElementById('slotOne').value = randNum; 
     numArray.push(randNum);
     randomNum();
     sum += randColor;
@@ -20,7 +20,7 @@ function handleClick() {
 function randomColor() {
     let randIdx = Math.floor((Math.random() * 5)) + 1;
     let randColor = colorList[randIdx];
-    document.getElementById('numberBox').style.color = randColor;
+    document.getElementById('slotOne').style.color = randColor;
     return randColor;
 }
 
@@ -36,7 +36,7 @@ document.getElementById('btn').addEventListener('click', handleClick);
 
 function handleClick2() {
     let randNum = Math.floor((Math.random() * 3)) + 1;
-    document.getElementById('numberBox2').value = randNum; 
+    document.getElementById('slotTwo').value = randNum; 
     numArray2.push(randNum);
     randomNum();
     sum += randColor;
@@ -48,7 +48,7 @@ function handleClick2() {
 function randomColor() {
     let randIdx = Math.floor((Math.random() * 5)) + 1;
     let randColor = colorList[randIdx];
-    document.getElementById('numberBox2').style.color = randColor;
+    document.getElementById('slotTwo').style.color = randColor;
     return randColor;
 }
 
@@ -58,7 +58,7 @@ document.getElementById('btn').addEventListener('click', handleClick2);
 
 function handleClick3() {
     let randNum = Math.floor((Math.random() * 3)) + 1;
-    document.getElementById('numberBox3').value = randNum; 
+    document.getElementById('slotThree').value = randNum; 
     numArray3.push(randNum);
     randomNum();
     sum += randColor;
@@ -70,7 +70,7 @@ function handleClick3() {
 function randomColor() {
     let randIdx = Math.floor((Math.random() * 5)) + 1;
     let randColor = colorList[randIdx];
-    document.getElementById('numberBox3').style.color = randColor;
+    document.getElementById('slotThree').style.color = randColor;
     return randColor;
 }
 
