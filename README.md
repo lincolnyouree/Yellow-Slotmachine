@@ -4,6 +4,7 @@
 
 ## To play the game:
 
+* How to play the game.
 * Click here to play the game.
 
 ## Motivation: 
@@ -12,16 +13,12 @@
 
 ## Wireframe:
 
-* Insert wireframe image here.
+! ([Imgur](https://i.imgur.com/wnb6Jkc.jpg))
 * Insert a finished game image here.
 
 ## Technology Implemented:
 
-* HTML
-* CSS
-* JavaScript
-* .confetti.js
-* animate.css
+* HTML, CSS, JavaScript, .confetti.js, animate.css
 
 ## Credits: 
 
@@ -46,4 +43,5 @@
 
 ## Stretch Goals:
 * Increase/decrease bet amount.
-* Choose theme by clicking button.
+* Allow user to choose theme.
+  

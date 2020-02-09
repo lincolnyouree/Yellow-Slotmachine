@@ -1,0 +1,57 @@
+#numberBox {
+    height: 100px;
+    width: 100px;
+    font-size: 30px;
+    text-align: center;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid;
+    line-height: 100px; /* centers the content when the same as your width */
+}
+
+#numberBox2 {
+    height: 100px;
+    width: 100px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#numberBox3 {
+    height: 100px;
+    width: 100px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 200px;
+    width: 500px;
+    font-size: 40px;
+    text-align: center;
+    border: 1px solid;
+    line-height: 200px;
+} */
