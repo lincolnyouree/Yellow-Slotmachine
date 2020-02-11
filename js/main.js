@@ -3,13 +3,13 @@
 let money = 100;
 let field = [];
 const bet = 10;
-const results = [1, 2, 3];
 
 /*----- cached element references -----*/
 
 const message = document.getElementById('message');
 betAmount = document.getElementById('money');
 moneyBox = document.getElementById('moneyAmount');
+const slotZero = document.getElementById('slotZero');
 
 /*----- event listeners -----*/
 
@@ -27,20 +27,20 @@ function checkWinner() {
 }
 
 function render() {
-    moneyBox.textContent = `$${money}`;
+    moneyBox.textContent = `£${money}`;
 }
 
 function handleClick() {
     if (money >= 10) {
     money -= 10;
     let randNum = Math.floor((Math.random() * 3)) + 1;
-    document.getElementById('slotZero').value = randNum; 
-    field[0]=(randNum);
+    document.getElementById('slotZero').textContent = randNum; 
+    field[1]=(randNum);
     let randNum2 = Math.floor((Math.random() * 3)) + 1;
-    document.getElementById('slotOne').value = randNum2; 
+    document.getElementById('slotOne').textContent = randNum2; 
     field[1]=(randNum2);
     let randNum3 = Math.floor((Math.random() * 3)) + 1;
-    document.getElementById('slotTwo').value = randNum3; 
+    document.getElementById('slotTwo').textContent = randNum3; 
     field[2]=(randNum3);
     checkWinner();
     render();
