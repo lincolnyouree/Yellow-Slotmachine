@@ -1,37 +1,27 @@
+@font-face {
+    font-family: 'YellowSubmarine';
+    font-style: normal;
+    font-weight: normal;
+    src: local('YellowSubmarine'), url('../css/fonts/beatles.woff') format('woff');
+    }
+
 h1 {
     color: rgb(247, 211, 0);
-}
+    font-family: 'YellowSubmarine';
+} 
 
 h2 {
-    background-color: rgb(239, 234, 231);
     color: rgb(247, 211, 0);
-}
+    font-family: 'YellowSubmarine';
+} 
 
 body {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(https://i.imgur.com/lY1EVlg.jpg);
+    background-image: url(https://i.imgur.com/wwwztPy.jpg);
     background-size: cover;
-}
-
-#game {
-    justify-content: center;
-    background-color: rgb(247, 211, 0);
-}
-
-h1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-h2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+} 
 
 #slots {
     display: flex;
@@ -44,12 +34,15 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-family: 'YellowSubmarine';
 }
 
 #money {
     display: flex;
     flex-direction: row;
     justify-content: center;
+   
+   
 }
 
 #slotZero {
@@ -60,6 +53,8 @@ h2 {
     text-align: center;
     background-color: rgb(239, 234, 231);
     color: black;
+    margin: 80px 0px 80px 0px;
+    border-radius: 50px;
 }
 
 #slotOne {
@@ -70,6 +65,7 @@ h2 {
     text-align: center;
     background-color: rgb(239, 234, 231);
     color: black;
+    margin: 80px 0px 80px 0px;
 }
 
 #slotTwo {
@@ -80,15 +76,25 @@ h2 {
     text-align: center;
     background-color: rgb(239, 234, 231);
     color: black;
+    margin: 80px 0px 80px 0px;
+}
+
+#slotThree {
+    height: 200px;
+    width: 200px;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(239, 234, 231);
+    color: black;
+    margin: 80px 0px 80px 0px;
 }
 
 #moneyAmount {
-    height: 100px;
-    width: 100px;
     font-size: 30px;
     text-align: center;
     border: 1px solid;
-    line-height: 100px; /* centers the content when the same as your width */
+    line-height: 100px;
 }
 
 #spins {
@@ -97,9 +103,12 @@ h2 {
     font-size: 30px;
     text-align: center;
     border: 1px solid;
-    line-height: 100px; /* centers the content when the same as your width */
+    line-height: 100px; /*centers the content when the same as your width */
 }
 
 #moneyAmount {
     background-color: rgb(239, 234, 231);
+    height: 100px;
+    width: 100px;
+    font-family: 'YellowSubmarine';
 }
