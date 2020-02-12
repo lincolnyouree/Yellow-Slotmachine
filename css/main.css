@@ -6,21 +6,24 @@
     }
 
 h1 {
-    /* color: rgb(239, 234, 231); */
     color: rgb(237, 0, 0);
     font-family: 'YellowSubmarine';
     font-size: 100px;
+    margin: auto;
+    padding: 20px;
 } 
 
 h2 {
-    /* color: rgb(239, 234, 231); */
     color: rgb(237, 0, 0);
     font-family: 'YellowSubmarine';
     font-size: 50px;
+    margin: auto;
+    padding: 20px;
 } 
 
 body {
     display: flex;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
     background-color: rgb(247, 211, 0);;
@@ -34,49 +37,54 @@ body {
 }
 
 #img1 {
-    border-radius: 5000px;
+    border-radius: 150px;
     align-items: center; 
-    padding: 25px;
+    padding: 15px;
+    margin: auto;
 }
 
 #img2 {
-    border-radius: 5000px;
+    border-radius: 150px;
     align-items: center;
-    padding: 25px;
+    padding: 15px;
+    margin: auto;
 }
 
 #img3 {
-    border-radius: 5000px;
+    border-radius: 150px;
     align-items: center;
-    padding: 25px;
+    padding: 15px;
+    margin: auto;
 }
 
 #img4 {
-    border-radius: 5000px;
+    border-radius: 150px;
     align-items: center;
-    padding: 25px;
+    padding: 15px;
+    margin: auto;
 }
 
 #btn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 100px;
+    height: 75px;
     width: 200px;
-    font-size: 30px;
-    font-family: 'YellowSubmarine';
     background-color: rgb(237, 0, 0);
     color: rgb(239, 234, 231);
-    border: 1px solid;
-    /* border-radius: 30px; */
+    font-family: 'YellowSubmarine';
+    font-size: 30px;
+    border: 3px solid;
+    border-color: rgb(239, 234, 231);
+    border-radius: 50px;
+    outline: none;
+    margin: auto;
+    padding: 15px;
 }
 
 #moneyAmount {
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
     background-color: rgb(239, 234, 231);
     color: black;
-    height: 100px;
-    width: 200px;
-    line-height: 100px;
     font-family: 'YellowSubmarine';
     font-size: 30px;
     text-align: center;
