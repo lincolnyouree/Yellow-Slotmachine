@@ -2,15 +2,15 @@
 
 ## Objective:
 
-To create a browser-based game that accurately simulates a simple slot machine.
+Create a browser-based game that simulates a simple slot machine.
 
 ## To Play the Game:
 
-* Click here to play the game.
+* Click [here](https://lincolnyouree.github.io/slot-machine-project-1/) to play the game.
 
 ## Motivation: 
 
-* A slot machine is one of the few games I technically know how to play, thus one of the few I would considered building. 
+* A slot machine is one of the few games I technically know how to play, thus one of the few I considered building. 
 
 ## Wireframe:
 
@@ -22,12 +22,10 @@ To create a browser-based game that accurately simulates a simple slot machine.
 * HTML
 * CSS
 * JavaScript
-* .confetti.js
-* animate.css
 
 ## Credits: 
 
-* All Images: https://www.beatles.com || Heinz Edelmann
+* All Images: https://www.thebeatles.com || Heinz Edelmann
 * Font: https://cufonfonts.com 
 
 ## Pseudocode:
@@ -35,7 +33,7 @@ To create a browser-based game that accurately simulates a simple slot machine.
 * Click spin button to spin the slots. 
 * Standard bet deducted from running total. 
 * Game Over notification when running total reaches 0. 
-* Payout into running total and display confetti when the same image appears in all three slots. 
+* Payout into running total when the same image appears in all slots. 
 
 
 # User Experience
@@ -45,7 +43,7 @@ Paul is an aging singer-songwriter who enjoys cartoons, LSD, and the occasional 
 
 ## User Persona #2:
 
-Ringo often gets lost and finds himself playing slot machines for no apparent reason. He really enjoys singing. 
+Ringo is a drummer and aspiring singer. He needs the money.
 
 ## Minimum Viable Product:
 * As a user, I should be able to click on a button to simulate a spin. 
@@ -54,11 +52,10 @@ Ringo often gets lost and finds himself playing slot machines for no apparent re
 * As a user, I should see a message after each spin indicating whether I have won, lost, or can spin again. 
 * As a user, I should see confetti and a winning message when I win a spin.  
 
-
 ## Stretch Goals:
 * Increase and decrease bet amount.
 * Allow user to choose theme.
 * Have music playing for the duration of gameplay. 
 * Spinning reels.
 * Asynchronous timer to make slots appear at different increments.
-  
+* Mobile responsiveness. 
