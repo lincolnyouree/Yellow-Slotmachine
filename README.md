@@ -27,10 +27,7 @@ To create a browser-based game that accurately simulates a simple slot machine.
 
 ## Credits: 
 
-* Background Image: https://www.newstatesman.com || Heinz Edelmann
-* All Other Images: https://comicvine.gamespot.com || Heinz Edelmann
-* Trippy Submarine: https://www.aarp.org || Heinz Edelmann
-* Cool Submarine: https://larvalsubjects.wordpress.com || Heinz Edelmann
+* All Images: https://www.beatles.com || Heinz Edelmann
 * Font: https://cufonfonts.com 
 
 ## Pseudocode:
