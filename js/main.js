@@ -19,10 +19,10 @@ let seaSong = new Audio('../sounds/sea.wav');
 let boing = new Audio('../sounds/boing.wav');
 
 let btn = document.getElementById('btn');
+let title = document.getElementById('title');
 let message = document.getElementById('message');
 let betAmount = document.getElementById('money');
 let moneyBox = document.getElementById('moneyAmount');
-
 
 /*----- event listeners -----*/
 
@@ -34,7 +34,7 @@ init();
 
 function init() {
     seaSong.play();
-    message.textContent = "Let's Play!";
+    message.textContent = "All Together Now!";
     moneyBox.textContent = "£1000";
 }
 
@@ -42,14 +42,18 @@ function checkWinner() {
     if (img1.src === img2.src && img2.src === img3.src && img3.src === img4.src) {
         yaySound.play();
         winSong.play();
+        title.classList.add('animated', 'wobble');
         moneyBox.classList.add('animated', 'jackInTheBox');
-        message.textContent = 'Congratulations!';
+        message.textContent = "You're bigger than Jesus!";
         money += 1000;
         moneyBox.classList.remove('jackInTheBox');
+        title.classList.remove('wobble');
     }  else if (money <= 0) {
         booSound.play();
         sadSong.play();
-        message.textContent = 'Game Over!';
+        title.classList.add('animated', 'wobble');
+        message.textContent = 'Thus begins the march of the meanies...';
+        moneyBox.classList.remove('wobble');
     } else {
         message.textContent = 'Spin Again!';
     }
@@ -74,27 +78,27 @@ function handleClick() {
 function render() {
     setTimeout(function() {
         let randNum = Math.floor(Math.random() * Math.floor(field.length -1));
-        img1.classList.add('animated', 'shake');
+        img1.classList.add('animated', 'rubberBand');
         img1.src = field[randNum];
     }, 600);
     setTimeout(function() {
         let randNum2 = Math.floor(Math.random() * Math.floor(field.length -1));
         img2.classList.add('animated', 'bounce');
         img2.src = field[randNum2];
-    }, 1000);
+    }, 1200);
     setTimeout(function() {
         let randNum3 = Math.floor(Math.random() * Math.floor(field.length -1));
-        img3.classList.add('animated', 'rubberBand');
+        img3.classList.add('animated', 'bounce');
         img3.src = field[randNum3];
     }, 1400);
     setTimeout(function() {
         let randNum4 = Math.floor(Math.random() * Math.floor(field.length -1));
-        img4.classList.add('animated', 'swing');
+        img4.classList.add('animated', 'bounce');
         img4.src = field[randNum4];
-    }, 2000);
+    }, 1600);
     moneyBox.textContent = `£${money}`;
-    img1.classList.remove('shake');
+    img1.classList.remove('rubberBand');
     img2.classList.remove('bounce');
-    img3.classList.remove('rubberBand');
-    img4.classList.remove('swing');
+    img3.classList.remove('bounce');
+    img4.classList.remove('bounce');
 }

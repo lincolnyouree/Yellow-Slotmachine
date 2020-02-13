@@ -15,17 +15,18 @@ Create a browser-based game that simulates a simple slot machine.
 ## Wireframe:
 
 ![Wireframe](https://i.imgur.com/wnb6Jkc.jpg)
-* Insert a finished game image here.
+![Wireframe](https://i.imgur.com/bYB9uuh.png)
 
 ## Technology Implemented:
 
 * HTML
 * CSS
 * JavaScript
+* animate.css
 
 ## Credits: 
 
-* All Images: https://www.thebeatles.com || Heinz Edelmann
+* Images: https://www.thebeatles.com || Heinz Edelmann
 * Font: https://www.cufonfonts.com 
 * Sounds: https://www.freesound.org 
 
@@ -33,19 +34,18 @@ Create a browser-based game that simulates a simple slot machine.
 
 * Click spin button to spin the slots. 
 * Standard bet deducted from running total. 
-* Game Over notification when running total reaches 0. 
+* Game over notification when running total reaches 0. 
 * Payout into running total when the same image appears in all slots. 
-
 
 # User Experience
 
 ## User Persona #1:
 
-Paul is an aging singer-songwriter who enjoys cartoons, LSD, and the occasional trip down Penny, rather, memory lane. Paul has an upcoming show at a rundown casino in Cripple Creek and knows he will have some time to kill after his set. 
+Paul is an aging singer-songwriter who enjoys cartoons, LSD, and "granny music". He has an upcoming show at a fledgling casino in Cripple Creek and knows he will have time to kill after his set. 
 
 ## User Persona #2:
 
-Ringo is a drummer and aspiring singer. He likely needs the money.
+Ringo is a drummer. He needs the money.
 
 ## Minimum Viable Product:
 * As a user, I should be able to click on a button to simulate a spin. 
@@ -55,9 +55,7 @@ Ringo is a drummer and aspiring singer. He likely needs the money.
 * As a user, I should see confetti and a winning message when I win a spin.  
 
 ## Stretch Goals:
-* Increase and decrease bet amount.
-* Allow user to choose theme.
+* Allow user to increase and decrease bet amount.
 * Spinning reels.
-* Time out function to make slots appear in sequential order.
-* Asynchronous timer to make slots appear at different increments.
+* Additional winning combinations. 
 * Mobile responsiveness. 
