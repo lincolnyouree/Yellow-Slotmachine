@@ -1,6 +1,6 @@
 /*----- constants -----*/
 
-let money = 500;
+let money = 1000;
 let field = ['images/john.png', 'images/paul.png', 'images/george.png', 'images/ringo.png', ''];
 const bet = 10;
 
@@ -24,6 +24,11 @@ const message = document.getElementById('message');
 const betAmount = document.getElementById('money');
 const moneyBox = document.getElementById('moneyAmount');
 
+const slotZero = document.getElementById('slotZero');
+const slotOne = document.getElementById('slotOne');
+const slotTwo = document.getElementById('slotTwo');
+const slotThree = document.getElementById('slotThree');
+
 /*----- event listeners -----*/
 
 btn.addEventListener('click', handleClick);
@@ -35,11 +40,22 @@ init();
 function init() {
     seaSong.play();
     message.textContent = "All Together Now!";
-    moneyBox.textContent = "£500";
+    moneyBox.textContent = "£1000";
 };
 
 function checkWinner() {
-    if (`${john.src}` === `${paul.src}` && `${paul.src}` === `${george.src}` && `${george.src}` === `${ringo.src}`) {
+    // if ((`${john.src}` === `${paul.src}`) && (`${paul.src}` === `${george.src}`) && (`${george.src}` === `${ringo.src}`)) {
+    // if ((slotZero.src === slotOne.src) && (slotOne.src === slotTwo.src) && (slotTwo.src === slotThree.src)) {
+    // if ((john.src === paul.src) && (paul.src === george.src) && (george.src === ringo.src)) {
+    // if (john.src === paul.src && paul.src === george.src && george.src === ringo.src) {
+    // if (slotZero[randNum] === slotOne[randNum2] && slotOne[randNum2] === slotTwo[randNum3] && slotTwo[randNum3] === slotThree[randNum4]) {
+    // if (john === paul && paul === george && george === ringo) {
+    // if (images/john.png === images/paul.png && images/paul.png === images/george.png && images/george.png === images/ringo.png) {
+
+        // if (img1 === img2 && img2 === img3 && img3 === img4){
+
+        if (field[0] === field[1] && field[1] === field[2] && field[2] === field[3]) {
+
         yaySound.play();
         winSong.play();
         title.classList.add('animated', 'wobble');
@@ -66,8 +82,8 @@ function handleClick() {
     btn.classList.add('animated', 'rubberBand');
     seaSong.play();
     money -= 10;
-    checkWinner();
     render();
+    checkWinner();
     setTimeout (function() {
         btn.classList.remove('rubberBand');
         message.classList.remove('fadeIn');

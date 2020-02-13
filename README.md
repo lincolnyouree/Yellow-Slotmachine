@@ -15,7 +15,7 @@ Create a browser-based game that simulates a simple slot machine.
 ## Wireframe:
 
 ![Wireframe](https://i.imgur.com/wnb6Jkc.jpg)
-![Wireframe](https://i.imgur.com/bYB9uuh.png)
+![Wireframe](https://i.imgur.com/gNwubAz.png)
 
 ## Technology Implemented:
 
@@ -35,13 +35,13 @@ Create a browser-based game that simulates a simple slot machine.
 * Click spin button to spin the slots. 
 * Standard bet deducted from running total. 
 * Game over notification when running total reaches 0. 
-* Payout into running total when the same image appears in all slots. 
+* Payout into running total and win notification when all four Beatles appear in slots. 
 
-# User Experience
+# User Experience:
 
 ## User Persona #1:
 
-Paul is an aging singer-songwriter who enjoys cartoons, LSD, and "granny music". He has an upcoming show at a fledgling casino in Cripple Creek and knows he will have time to kill after his set. 
+Paul is an aging singer-songwriter who enjoys cartoons, LSD, and writing occasional "granny music". He has an upcoming show at a fledgling casino in Cripple Creek and will have some time to kill after his set. 
 
 ## User Persona #2:
 
@@ -52,10 +52,10 @@ Ringo is a drummer. He needs the money.
 * As a user, I should be able to keep a running total of my money. 
 * As a user, I should be paid the correct amount when I win a spin.
 * As a user, I should see a message after each spin indicating whether I have won, lost, or can spin again. 
-* As a user, I should see confetti and a winning message when I win a spin.  
 
 ## Stretch Goals:
-* Allow user to increase and decrease bet amount.
+* Allow user to custamize bet amount.
 * Spinning reels.
 * Additional winning combinations. 
+* Add confetti after win.
 * Mobile responsiveness. 
