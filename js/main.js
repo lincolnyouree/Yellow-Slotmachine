@@ -1,6 +1,6 @@
 /*----- constants -----*/
 
-let money = 1000;
+let money = 500;
 let field = ['images/john.png', 'images/paul.png', 'images/george.png', 'images/ringo.png', ''];
 const bet = 10;
 
@@ -24,11 +24,6 @@ const message = document.getElementById('message');
 const betAmount = document.getElementById('money');
 const moneyBox = document.getElementById('moneyAmount');
 
-const slotZero = document.getElementById('slotZero');
-const slotOne = document.getElementById('slotOne');
-const slotTwo = document.getElementById('slotTwo');
-const slotThree = document.getElementById('slotThree');
-
 /*----- event listeners -----*/
 
 btn.addEventListener('click', handleClick);
@@ -38,42 +33,9 @@ btn.addEventListener('click', handleClick);
 init();
 
 function init() {
-    seaSong.play();
     message.textContent = "All Together Now!";
-    moneyBox.textContent = "£1000";
+    moneyBox.textContent = "£500";
 };
-
-function checkWinner() {
-    // if ((`${john.src}` === `${paul.src}`) && (`${paul.src}` === `${george.src}`) && (`${george.src}` === `${ringo.src}`)) {
-    // if ((slotZero.src === slotOne.src) && (slotOne.src === slotTwo.src) && (slotTwo.src === slotThree.src)) {
-    // if ((john.src === paul.src) && (paul.src === george.src) && (george.src === ringo.src)) {
-    // if (john.src === paul.src && paul.src === george.src && george.src === ringo.src) {
-    // if (slotZero[randNum] === slotOne[randNum2] && slotOne[randNum2] === slotTwo[randNum3] && slotTwo[randNum3] === slotThree[randNum4]) {
-    // if (john === paul && paul === george && george === ringo) {
-    // if (images/john.png === images/paul.png && images/paul.png === images/george.png && images/george.png === images/ringo.png) {
-
-        // if (img1 === img2 && img2 === img3 && img3 === img4){
-
-        if (field[0] === field[1] && field[1] === field[2] && field[2] === field[3]) {
-
-        yaySound.play();
-        winSong.play();
-        title.classList.add('animated', 'wobble');
-        moneyBox.classList.add('animated', 'jackInTheBox');
-        message.textContent = "You're bigger than Jesus!";
-        money += 1000;
-        moneyBox.classList.remove('jackInTheBox');
-        title.classList.remove('wobble');
-    } else if (money <= 0) {
-        booSound.play();
-        sadSong.play();
-        title.classList.add('animated', 'wobble');
-        message.textContent = 'Thus begins the march of the meanies...';
-        moneyBox.classList.remove('wobble');
-    } else {
-        message.textContent = 'Spin Again!';
-    }
-}
 
 function handleClick() {
     boing.play();
@@ -83,14 +45,18 @@ function handleClick() {
     seaSong.play();
     money -= 10;
     render();
-    checkWinner();
+    winnerDelay();
     setTimeout (function() {
         btn.classList.remove('rubberBand');
         message.classList.remove('fadeIn');
     }, 1000);
 }
 }
-
+function winnerDelay(){
+    setTimeout(() => {
+        checkWinner();
+    }, 1700);
+}
 function render() {
     setTimeout(function() {
         let randNum = Math.floor(Math.random() * Math.floor(field.length -1));
@@ -117,4 +83,37 @@ function render() {
     paul.classList.remove('bounce');
     george.classList.remove('bounce');
     ringo.classList.remove('bounce');
+}
+
+function checkWinner() {
+    if (john.src === george.src && george.src === ringo.src && ringo.src === paul.src) {
+        yaySound.play();
+        winSong.play();
+        console.log('all same')
+        title.classList.add('animated', 'wobble');
+        moneyBox.classList.add('animated', 'jackInTheBox');
+        message.textContent = "Congratulations!";
+        money += 100;
+        moneyBox.classList.remove('jackInTheBox');
+        title.classList.remove('wobble');
+    } 
+    if (john.src != paul.src && john.src != ringo.src && john.src != george.src && paul.src != ringo.src && paul.src != george.src && ringo.src != george.src) {
+        console.log('4 diff')
+        yaySound.play();
+        winSong.play();
+        title.classList.add('animated', 'wobble');
+        moneyBox.classList.add('animated', 'jackInTheBox');
+        message.textContent = "You're Bigger than Jesus!";
+        money += 1000;
+        moneyBox.classList.remove('jackInTheBox');
+        title.classList.remove('wobble');
+    } else if (money <= 0) {
+        booSound.play();
+        sadSong.play();
+        title.classList.add('animated', 'wobble');
+        message.textContent = 'Thus begins the march of the meanies...';
+        moneyBox.classList.remove('wobble');
+    } else {
+        message.textContent = 'Spin Again!';
+    }
 }

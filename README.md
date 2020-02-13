@@ -48,12 +48,14 @@ Paul is an aging singer-songwriter who enjoys cartoons, LSD, and writing occasio
 Ringo is a drummer. He needs the money.
 
 ## Minimum Viable Product:
+
 * As a user, I should be able to click on a button to simulate a spin. 
 * As a user, I should be able to keep a running total of my money. 
 * As a user, I should be paid the correct amount when I win a spin.
 * As a user, I should see a message after each spin indicating whether I have won, lost, or can spin again. 
 
 ## Stretch Goals:
+
 * Allow user to custamize bet amount.
 * Spinning reels.
 * Additional winning combinations. 
