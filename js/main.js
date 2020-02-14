@@ -1,6 +1,6 @@
 /*----- constants -----*/
 
-let money = 250;
+let money = 100;
 let field = ['images/john.png', 'images/paul.png', 'images/george.png', 'images/ringo.png', ''];
 let bet = 10;
 
@@ -34,7 +34,7 @@ init();
 
 function init() {
     message.textContent = "All Together Now!";
-    moneyBox.textContent = "£250";
+    moneyBox.textContent = "£100";
 };
 
 function handleClick() {
