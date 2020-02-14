@@ -1,8 +1,8 @@
 /*----- constants -----*/
 
-let money = 500;
+let money = 250;
 let field = ['images/john.png', 'images/paul.png', 'images/george.png', 'images/ringo.png', ''];
-const bet = 10;
+let bet = 10;
 
 /*----- cached element references -----*/
 
@@ -34,7 +34,7 @@ init();
 
 function init() {
     message.textContent = "All Together Now!";
-    moneyBox.textContent = "£500";
+    moneyBox.textContent = "£250";
 };
 
 function handleClick() {
@@ -52,11 +52,7 @@ function handleClick() {
     }, 1000);
 }
 }
-function winnerDelay(){
-    setTimeout(() => {
-        checkWinner();
-    }, 1700);
-}
+
 function render() {
     setTimeout(function() {
         let randNum = Math.floor(Math.random() * Math.floor(field.length -1));
@@ -85,26 +81,31 @@ function render() {
     ringo.classList.remove('bounce');
 }
 
+function winnerDelay(){
+    setTimeout(() => {
+        checkWinner();
+    }, 1700);
+}
+
 function checkWinner() {
-    if (john.src === george.src && george.src === ringo.src && ringo.src === paul.src) {
+    if (john.src === george.src && george.src === ringo.src 
+        && ringo.src === paul.src) {
         yaySound.play();
-        winSong.play();
-        console.log('all same')
         title.classList.add('animated', 'wobble');
+        money += 100;
         moneyBox.classList.add('animated', 'jackInTheBox');
         message.textContent = "Congratulations!";
-        money += 100;
         moneyBox.classList.remove('jackInTheBox');
         title.classList.remove('wobble');
-    } 
-    if (john.src != paul.src && john.src != ringo.src && john.src != george.src && paul.src != ringo.src && paul.src != george.src && ringo.src != george.src) {
-        console.log('4 diff')
+    } else if (john.src != paul.src && john.src != ringo.src && john.src 
+        != george.src && paul.src != ringo.src && paul.src != george.src 
+        && ringo.src != george.src) {
         yaySound.play();
         winSong.play();
         title.classList.add('animated', 'wobble');
         moneyBox.classList.add('animated', 'jackInTheBox');
+        money += 500;
         message.textContent = "You're Bigger than Jesus!";
-        money += 1000;
         moneyBox.classList.remove('jackInTheBox');
         title.classList.remove('wobble');
     } else if (money <= 0) {

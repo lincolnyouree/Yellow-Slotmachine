@@ -10,7 +10,7 @@ Create a browser-based game that simulates a simple slot machine.
 
 ## Motivation: 
 
-* A slot machine is one of the few games I technically know how to play, thus one of the few I considered building. 
+* A slot machine is one of the few games I technically know how to play, thus one of the only I considered building. The Beatles are the greatest band of all time... 
 
 ## Wireframe:
 
@@ -59,5 +59,5 @@ Ringo is a drummer. He needs the money.
 * Allow user to custamize bet amount.
 * Spinning reels.
 * Additional winning combinations. 
-* Add confetti after win.
+* Add confetti.
 * Mobile responsiveness. 
