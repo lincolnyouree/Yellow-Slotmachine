@@ -6,7 +6,7 @@
 
 ## Objective:
 
-Create a browser-based game that simulates a simple slot machine.
+* Create a browser-based game that simulates a simple slot machine.
 
 ## Motivation: 
 
