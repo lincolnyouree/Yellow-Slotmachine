@@ -58,6 +58,7 @@ Ringo is a drummer. He needs the money.
 
 * Allow user to custamize bet amount.
 * Spinning reels.
-* Additional winning combinations. 
+* Additional images and winning combinations. 
 * Add confetti.
+* Make images spin from within the portholes.
 * Mobile responsiveness. 
