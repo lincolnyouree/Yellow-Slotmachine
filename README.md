@@ -7,7 +7,7 @@
 
 * A fun, Beatles-themed slot machine inspired by Yellow Submarine.
 
-* Click [here]() to play the game.
+* Click [here](https://lincolnyouree.github.io/Yellow-Slotmachine/) to play the game.
 
 ## Technologies Ued:
 
