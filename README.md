@@ -1,6 +1,6 @@
-# Slot Machine 
+# Yellow Slotmachine 
 
-## To Play the Game:
+* A fun, Beatles-themed slot machine inspired by Yellow Submarine.
 
 * Click [here](https://lincolnyouree.github.io/slot-machine-project-1/) to play the game.
 
@@ -61,4 +61,4 @@ Ringo is a drummer. He needs the money.
 * Additional images and winning combinations. 
 * Add confetti.
 * Make images spin from within the portholes.
-* Mobile responsiveness. 
+* Mobile responsiveness. # Yellow-Slotmachine
