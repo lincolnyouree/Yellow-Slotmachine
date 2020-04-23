@@ -1,10 +1,6 @@
-/*----- constants -----*/
-
 let money = 100;
 let field = ['images/john.png', 'images/paul.png', 'images/george.png', 'images/ringo.png', ''];
 let bet = 10;
-
-/*----- cached element references -----*/
 
 const john = document.getElementById('img1');
 const paul = document.getElementById('img2');
@@ -24,11 +20,7 @@ const message = document.getElementById('message');
 const betAmount = document.getElementById('money');
 const moneyBox = document.getElementById('moneyAmount');
 
-/*----- event listeners -----*/
-
 btn.addEventListener('click', handleClick);
-
-/*----- functions -----*/
 
 init();
 
