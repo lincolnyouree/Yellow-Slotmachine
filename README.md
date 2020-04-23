@@ -62,3 +62,4 @@ Ringo is a drummer. He needs the money.
 * Add confetti.
 * Make images spin from within the portholes.
 * Mobile responsiveness. # Yellow-Slotmachine
+# Yellow-Slotmachine
